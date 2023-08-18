@@ -1,0 +1,42 @@
+<ion-page>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Enhancing Promises & Agreements</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content fullscreen>
+    <div class="ion-text-center ion-padding">
+      <img src="../../assets/TrustbutVerify.png" alt="Handshake Logo" width="50%">
+    </div>
+    <ion-card>
+      <ion-card-content>
+        <form (submit)="handleLogin()">
+          <ion-input
+            fill="outline"
+            placeholder="Mobile number"
+            type="text"
+            [(ngModel)]="mobile"
+            name="mobile">
+          </ion-input>
+          <ion-input
+            class="ion-margin-top"
+            fill="outline"
+            placeholder="password"
+            type="password"
+            [(ngModel)]="password"
+            name="password">
+          </ion-input>
+          <ion-button type="submit">Login</ion-button>
+        </form>
+        <ion-button routerLink="/register" color="secondary" expand="block" class="ion-margin-top">
+          Create new account
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+    <ion-header collapse="condense">
+      <ion-toolbar color="success">
+        <ion-title size="large">Blank</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </ion-content>
+</ion-page>
